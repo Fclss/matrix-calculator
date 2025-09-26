@@ -21,7 +21,6 @@ build/
 CMakeFiles/
 CMakeCache.txt
 CMakeScripts/
-Makefile
 cmake_install.cmake
 install_manifest.txt
 compile_commands.json
