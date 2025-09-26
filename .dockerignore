@@ -1,6 +1,5 @@
 # Бинарные файлы и директории сборки
 build/
-bin/
 *.o
 *.a
 *.so
@@ -18,7 +17,6 @@ bin/
 CMakeCache.txt
 CMakeFiles/
 cmake_install.cmake
-Makefile
 *.cmake
 
 # Git файлы
