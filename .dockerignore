@@ -1,0 +1,65 @@
+# Бинарные файлы и директории сборки
+build/
+bin/
+*.o
+*.a
+*.so
+*.dll
+*.exe
+
+# Системные и IDE файлы
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# CMake кэш и временные файлы
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+
+# Git файлы
+.git/
+.gitignore
+.gitmodules
+
+# Логи и временные файлы
+*.log
+*.tmp
+*.temp
+
+# Документация
+docs/
+Doxygen/
+
+# Резервные копии и архивы
+*.bak
+*.backup
+*.tar
+*.gz
+*.zip
+
+# Тестовые данные и результаты
+test_results/
+coverage/
+
+# Пользовательские конфиги
+*.user
+*.suo
+*.ncb
+*.sdf
+
+# macOS файлы
+.DS_Store
+._*
+
+# Windows файлы
+Thumbs.db
+Desktop.ini
+
+# Docker файлы
+.dockerignore
+Dockerfile

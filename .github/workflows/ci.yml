@@ -1,0 +1,36 @@
+name: Matrix Calculator CI
+
+on: [push, pull_request]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y g++ doxygen graphviz valgrind
+      
+    - name: Build application
+      run: |
+        make all
+      
+    - name: Run tests
+      run: |
+        ./test_app
+      
+    - name: Generate documentation
+      run: |
+        make docs
+      
+    - name: Check memory leaks
+      run: |
+        valgrind --leak-check=full --error-exitcode=1 ./test_app
+      
+    - name: Build main application
+      run: |
+        ./matrix_app

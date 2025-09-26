@@ -1,0 +1,66 @@
+bin/
+docs/
+
+# Basic exceptions
+*.user
+*.suo
+*.sdf
+*.opensdf
+*.sln
+*.vcxproj*
+*.vc.db
+*.VC.db
+
+#Doxygen
+latex/
+html/
+*.tag
+
+# Specific to CMake
+build/
+CMakeFiles/
+CMakeCache.txt
+CMakeScripts/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+*.cmake
+cmake-tools.vsix
+toolchain.cmake
+
+# Code coverage and profiling
+*.gcno
+*.gcda
+*.gcov
+*.profraw
+*.profdata
+coverage.info
+coverage.txt
+coverage_report/
+Icov.info
+
+# IDE $ editors
+.idea/
+*.code-workspace
+*.swp
+*~
+*.orig
+
+# Sustem files
+.DS Store
+Thumbs.db
+
+# Logs & temporary files
+*.log
+*.tmp
+*.temp
+
+# Artefacts
+*.o
+*.a
+*.so
+*.dylib
+*.lib
+* dll
+*.exe
